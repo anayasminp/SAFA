@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f5ed;
+    color: #1e3155;
+}
+
+.header {
+    height: 76px;
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6%;
+
+    gap: 40px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    width: 170px;
+    height: 76px;
+
+    background: #203557;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 40px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    flex: 1;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    
+    font-size: 18px;
+
+    transition: all 0.3s ease-in-out;
+}

@@ -113,9 +113,281 @@
             <p>Acesso a todo o andamento do processo.</p>
         </div>
     </div>
+        <section class="emergencia">
+    <h2>Contatos de emergência e rede de apoio</h2>
+
+    <div class="cards">
+
+        <a href="tel:190" class="card">
+            <h3>190</h3>
+            <h4>Polícia Militar</h4>
+            <p>Emergências e perigo imediato. Atendimento 24h.</p>
+        </a>
+
+        <a href="tel:180" class="card">
+            <h3>180</h3>
+            <h4>Central de Atendimento à Mulher</h4>
+            <p>Orientações, denúncias e encaminhamentos.</p>
+        </a>
+
+        <a href="tel:188" class="card">
+            <h3>188</h3>
+            <h4>CVV – Apoio emocional</h4>
+            <p>Apoio emocional e prevenção do suicídio.</p>
+        </a>
+
+        <a href="tel:100" class="card">
+            <h3>100</h3>
+            <h4>Direitos Humanos</h4>
+            <p>Denúncias de violações de direitos humanos.</p>
+        </a>
+    </div>
+</section>
     </main>
     <footer>
+        <div class="cards">
 
+    <a href="https://www.google.com/maps/search/?api=1&query=DEAM+Natal+RN"
+       target="_blank"
+       class="card">
+        <h3>DEAM Natal</h3>
+        <p>Delegacia Especializada de Atendimento à Mulher.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=DEAM+Mossoro+RN"
+       target="_blank"
+       class="card">
+        <h3>DEAM Mossoró</h3>
+        <p>Atendimento especializado para mulheres vítimas de violência.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Casa+da+Mulher+Brasileira+Natal+RN"
+       target="_blank"
+       class="card">
+        <h3>Casa da Mulher Brasileira</h3>
+        <p>Acolhimento, orientação jurídica e apoio psicológico.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Defensoria+Publica+Natal+RN"
+       target="_blank"
+       class="card">
+        <h3>Defensoria Pública</h3>
+        <p>Assistência jurídica gratuita.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=CREAS+Natal+RN"
+       target="_blank"
+       class="card">
+        <h3>CRAS e CREAS</h3>
+        <p>Acompanhamento social e familiar.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Ministerio+Publico+RN"
+       target="_blank"
+       class="card">
+        <h3>Ministério Público</h3>
+        <p>Acompanhamento de medidas protetivas.</p>
+        <span>Abrir no Google Maps</span>
+    </a>
+
+</div>
+        <section class="canal-denuncia">
+
+    <div class="info-denuncia">
+
+        <span class="badge-anonimo">
+            100% anônimo
+        </span>
+
+        <h2>Canal de denúncia anônima</h2>
+
+        <p>
+            Registre uma denúncia sem se identificar. Você receberá um
+            número de protocolo para acompanhamento. Em caso de perigo
+            imediato, ligue sempre <strong>190</strong>.
+        </p>
+
+        <div class="aviso">
+            <strong>Este é um protótipo demonstrativo.</strong>
+            Os dados não são enviados a nenhum servidor e servem apenas
+            para simular o fluxo de denúncia.
+        </div>
+
+    </div>
+
+    <form id="formDenuncia" class="form-denuncia">
+
+        <label for="tipoViolencia">Tipo de violência</label>
+        <select id="tipoViolencia" required>
+            <option value="">Selecione uma opção</option>
+            <option>Violência Física</option>
+            <option>Violência Psicológica</option>
+            <option>Violência Sexual</option>
+            <option>Violência Patrimonial</option>
+            <option>Violência Moral</option>
+        </select>
+
+        <label for="cidade">Cidade / estado (opcional)</label>
+        <input
+            type="text"
+            id="cidade"
+            placeholder="Ex.: Natal/RN"
+        >
+
+        <label for="relato">Relato</label>
+        <textarea
+            id="relato"
+            rows="5"
+            placeholder="Descreva o que aconteceu. Nenhuma informação pessoal é obrigatória."
+            required
+        ></textarea>
+
+        <button type="submit">
+            Enviar denúncia anônima
+        </button>
+
+    </form>
+</section>
+
+        <section class="historias">
+
+    <span class="secao-tag">CONSCIENTIZAÇÃO</span>
+
+    <h2>Histórias que fortalecem</h2>
+
+    <p class="descricao">
+        Cada relato é um lembrete de que buscar ajuda é um ato de coragem —
+        e de que ninguém precisa enfrentar isso sozinha.
+    </p>
+
+    <!-- FORMULÁRIO PARA ENVIAR RELATO -->
+
+    <div class="enviar-relato">
+
+        <h3>Compartilhe sua história</h3>
+
+        <form id="formRelato">
+
+            <textarea
+                id="relato"
+                rows="6"
+                placeholder="Conte sua experiência de forma anônima..."
+                required
+            ></textarea>
+
+            <input
+                type="number"
+                id="idade"
+                placeholder="Idade (opcional)"
+                min="18"
+                max="120"
+            >
+
+            <button type="submit">
+                Enviar relato
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- RELATOS EXIBIDOS -->
+
+    <div class="cards-relatos" id="historiasContainer">
+
+        <article class="card-relato">
+            <p>
+                Por muito tempo achei que era normal. Quando liguei para o
+                180, entendi que tinha direitos e que existia uma rede pronta
+                para me acolher.
+            </p>
+
+            <span>— Relato anônimo, 34 anos</span>
+        </article>
+
+        <article class="card-relato">
+            <p>
+                A medida protetiva mudou minha vida. Hoje ajudo outras mulheres
+                a darem o primeiro passo — informação salva.
+            </p>
+
+            <span>— Relato anônimo, 41 anos</span>
+        </article>
+
+        <article class="card-relato">
+            <p>
+                Denunciar parecia impossível até eu descobrir que podia ser
+                anônimo. Não estamos sozinhas.
+            </p>
+
+            <span>— Relato anônimo, 27 anos</span>
+        </article>
+
+    </div>
+
+    <!-- ESTATÍSTICAS -->
+
+    <div class="estatisticas">
+
+        <div class="estatistica">
+            <h3>1 a cada 3</h3>
+            <p>
+                mulheres já sofreram algum tipo de violência ao longo da vida.
+            </p>
+        </div>
+
+        <div class="estatistica">
+            <h3>24 horas</h3>
+            <p>
+                de funcionamento dos canais 180 e 190.
+            </p>
+        </div>
+
+        <div class="estatistica">
+            <h3>100%</h3>
+            <p>
+                gratuito e sigiloso o atendimento da Central 180.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+document.getElementById("formRelato")
+.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const relato = document.getElementById("relato").value;
+    const idade = document.getElementById("idade").value;
+
+    const card = document.createElement("article");
+    card.classList.add("card-relato");
+
+    card.innerHTML = `
+        <p>${relato}</p>
+        <span>
+            — Relato anônimo
+            ${idade ? ", " + idade + " anos" : ""}
+        </span>
+    `;
+
+    document
+        .getElementById("historiasContainer")
+        .prepend(card);
+
+    this.reset();
+
+    alert("Relato enviado com sucesso!");
+});
+</script>
     </footer>
 
 </body>
